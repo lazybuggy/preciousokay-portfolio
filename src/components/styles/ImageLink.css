@@ -1,0 +1,18 @@
+.Image{
+    height: 100px;
+    width: auto;
+}
+
+.Root{
+    display: block;
+    width: fit-content;
+    position:absolute;
+    left: 100px;
+    color: orange;
+}
+
+.Title{
+    margin: 0;
+    margin-left: 15px;
+    color: orange;
+}
