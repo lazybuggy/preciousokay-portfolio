@@ -1,17 +1,18 @@
 import "./styles/Gallery.css";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 function Gallery({ images }) {
   const [img, setImg] = useState(images[0]);
   return (
     <div className="Gallery">
       <div className="Pane">
-        {images.map((image,index) => {
+        {images.map((image, index) => {
           return (
             <img
-            key={index}
+              key={index}
               src={image}
               className="GalleryImage"
+              alt="Alt"
               onClick={() => setImg(image)}
             />
           );
@@ -19,8 +20,10 @@ function Gallery({ images }) {
       </div>
       <div className="Enlarged">
         <div className="EnlargedWrapper">
-          {/* <img src={img} className="GalleryImageBig" /> */}
-          <div className="GalleryImageBig" style={{ backgroundImage: `url(${img})` }}/>
+          <div
+            className="GalleryImageBig"
+            style={{ backgroundImage: `url(${img})` }}
+          />
         </div>
       </div>
     </div>

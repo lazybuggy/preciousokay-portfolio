@@ -9,13 +9,24 @@ import ll from "../assets/finished/ll.jpg";
 import snacktime from "../assets/finished/snacktime.jpg";
 
 import "./styles/Home.css";
-import ImageLink from "./ImageLink";
 import Gallery from "./Gallery";
 
 function Finished() {
   return (
     <div className="Main">
-      <Gallery images={[annie,boyyee,dtiyss,family,friends,bro,sis,ll,snacktime]}/>
+      <Gallery
+        images={[
+          annie,
+          boyyee,
+          dtiyss,
+          family,
+          friends,
+          bro,
+          sis,
+          ll,
+          snacktime,
+        ]}
+      />
     </div>
   );
 }
