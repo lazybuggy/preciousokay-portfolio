@@ -1,6 +1,6 @@
 
   .HeroContainer{
-    height: 175px;
+    height: 125px;
     display: flex;
     justify-content: center;
   }
@@ -13,16 +13,17 @@
     display: flex;
     margin: 30px 0;
     min-height: 350px;
+    flex-direction: column;
   }
   
   .Container .Links{
     /* flex:1; */
-    min-width: 500px;
+    min-height: 350px;
     position: relative;
   }
 
   .Links .wip{
-      left: 250px;
+      left: 180px;
       top: 100px;
   }
 
@@ -39,4 +40,22 @@
     .HeroContainer{
       height: 375px;
     }
+
+    .Container .Links{
+        /* flex:1; */
+        min-width: 500px;
+        min-height: unset;
+      }
+    
+
+    .Container{
+        flex-direction: row;
+      }
+
+
+  .Links .wip{
+    left: 250px;
+}
+
+      
   }

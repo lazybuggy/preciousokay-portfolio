@@ -1,0 +1,58 @@
+.Gallery{
+    border: 20px solid orange;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.Pane{
+    display: flex;
+    overflow-x: scroll;
+}
+
+.GalleryImage {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+}
+
+.Enlarged{
+    flex: 1;
+    background: pink;
+    position: relative;
+    /* max-height: 100%;
+    max-width: 100%; */
+}
+
+.EnlargedWrapper{
+    width: 500px;
+    height: auto;
+}
+
+.Enlarged .GalleryImageBig{
+    /* height: 100%;
+    width: 100%; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+@media screen and (min-width: 768px) {
+    .Gallery{
+        flex-direction: row;
+    }
+
+    .Pane{
+        flex-direction: column;
+        border-right: 20px solid orange;
+        overflow-y: scroll;
+        overflow-x: unset;
+        width: fit-content;
+    }
+}

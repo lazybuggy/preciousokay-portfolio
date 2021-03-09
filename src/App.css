@@ -7,32 +7,16 @@
 .Main{
   overflow-y: scroll;
 }
-/*
-.HeroContainer{
-  height: 175px;
-  display: flex;
-  justify-content: center;
+
+.Nav{
+  position: absolute;
+  right: 0;
+  top: 10px;
+  z-index: 5;
 }
 
-.Hero{
-  height: 100%;
+.Nav a{
+  margin-right: 20px;
+  color: purple;
+  font-size: 18px;
 }
-
-.Container{
-  display: flex;
-}
-
-.Container .Links{
-  flex:1;
-}
-
-.Container .Description{
-  width: 500px;
-}
-
-
-@media screen and (min-width: 768px) {
-  .HeroContainer{
-    height: 375px;
-  }
-} */
