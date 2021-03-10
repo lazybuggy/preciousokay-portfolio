@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 
 function Switcher({ words, colour, autoplay = true, interval = 5000 }) {
   const [index, setIndex] = useState(0);
-  const [optionCount, setOptionCount] = useState(words.length);
+  const optionCount = words.length;
   const [word, setWord] = useState(words[0]);
 
   useEffect(() => {

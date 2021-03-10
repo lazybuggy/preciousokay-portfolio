@@ -1,12 +1,12 @@
 .Main{
     padding: 50px 0;
+    box-sizing: border-box;
 }
 
 .FinishMain,
 .DoodlesMain,
 .WIPMain{
     padding: 50px 0 0;
-    box-sizing: border-box;
 }
 
   .HeroContainer{
@@ -44,6 +44,28 @@
     max-width: 600px;
     margin: 0 20px;
   }
+
+  .ContactMe{
+      margin: 0 20px 40px;
+  }
+
+  .ContactMe h2{
+    color: #BD6340;
+    letter-spacing: 6px;
+  }
+
+  .ContactMe a{
+      color: white;
+      text-decoration: none;
+  }
+
+  /* a:visited{
+    color: #BD6340;
+  } */
+  
+  .ContactMe a:hover{
+    opacity: 0.8;
+  }
   
   @media screen and (min-width: 768px) {
     .Main{
@@ -67,5 +89,12 @@
     left: 250px;
 }
 
+.ContactMe{
+    text-align: center;
+}
+
+.ContactMe h2{
+   font-size: 30px;
+  }
       
   }

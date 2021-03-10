@@ -45,6 +45,10 @@ function Home() {
           based in the Greater Toronto Area!
         </div>
       </div>
+      <div className="ContactMe">
+          <h2>CONTACT ME</h2>
+          <a href="mailto:preciousezinnaokeh@gmail.com">preciousezinnaokeh at gmail dot com</a>
+      </div>
     </div>
   );
 }
