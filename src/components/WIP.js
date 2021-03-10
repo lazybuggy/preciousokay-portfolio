@@ -5,6 +5,8 @@ import wip4 from "../assets/wip/wip4.png";
 import wip5 from "../assets/wip/wip5.png";
 import wip6 from "../assets/wip/wip6.png";
 import wip7 from "../assets/wip/wip7.png";
+import wip8 from "../assets/wip/wip8.png";
+import wip9 from "../assets/wip/wip9.png";
 
 import "./styles/Home.css";
 import Gallery from "./Gallery";
@@ -14,6 +16,8 @@ function WIP() {
     <div className="WIPMain Main">
       <Gallery
         panes={[
+          { image: wip9, title: "N/A", tt: "N/A", mu: "Krita" },
+          { image: wip8, title: "N/A", tt: "N/A", mu: "Krita" },
           { image: wip1, title: "N/A", tt: "N/A", mu: "Krita" },
           { image: wip2, title: "N/A", tt: "N/A", mu: "Krita" },
           { image: wip3, title: "N/A", tt: "N/A", mu: "Krita" },
