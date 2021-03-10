@@ -17,17 +17,16 @@
     object-fit: cover;
 }
 
+.GalleryImage:hover {
+    opacity: 0.7;
+}
+
 .Enlarged{
     flex: 1;
-    background: pink;
+    /* background: pink; */
     position: relative;
     /* max-height: 100%;
     max-width: 100%; */
-}
-
-.EnlargedWrapper{
-    width: 500px;
-    height: auto;
 }
 
 .Enlarged .GalleryImageBig{
@@ -41,6 +40,37 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center center;
+}
+
+.InfoWrapper{
+    position: absolute;
+    display: flex;
+    background: red;
+    height: 150px;
+    bottom: 20px;
+    right:0;
+    transform: translateX(90%);
+    transition: transform ease-in-out 588ms;
+}
+
+.InfoWrapper:hover{
+    transform: translateX(0%);
+}
+
+.Tab{
+    width: 10px;
+    word-wrap: break-word;
+    margin: 20px 10px;
+}
+
+.Info{
+    width: 300px;
+    margin: 20px;
+    align-self: center;
+}
+
+.Info p{
+    margin: 0;
 }
 
 @media screen and (min-width: 768px) {

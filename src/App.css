@@ -1,11 +1,14 @@
- html, #root, body,.Main{
+html, #root, body,.Main{
   height: 100%;
   width: 100%;
   overflow: hidden;
+  font-family: 'Space Mono', monospace;
+  color: white;
 }
 
 .Main{
   overflow-y: scroll;
+  background: black;
 }
 
 .Nav{

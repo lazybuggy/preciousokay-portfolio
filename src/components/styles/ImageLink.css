@@ -8,13 +8,13 @@
     width: fit-content;
     position:absolute;
     left: 70px;
-    color: orange;
+    color: #bd6340;
 }
 
 .Title{
     margin: 0;
     margin-left: 15px;
-    color: orange;
+    color: #bd6340;
 }
 
 @media screen and (min-width: 768px) {
