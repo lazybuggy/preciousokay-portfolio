@@ -1,7 +1,13 @@
 import "./styles/Switcher.css";
 import { useState, useEffect } from "react";
 
-function Switcher({ words, colour, autoplay = true, interval = 5000 }) {
+function Switcher({
+  words,
+  colour,
+  autoplay = true,
+  interval = 5000,
+  hasArrows = false,
+}) {
   const [index, setIndex] = useState(0);
   const optionCount = words.length;
   const [word, setWord] = useState(words[0]);
@@ -14,7 +20,7 @@ function Switcher({ words, colour, autoplay = true, interval = 5000 }) {
       );
       return () => clearInterval(wordInterval);
     }
-  }, [autoplay,interval]);
+  }, [autoplay, interval]);
 
   useEffect(() => {
     if (index >= 0 && index < optionCount) {
@@ -26,21 +32,27 @@ function Switcher({ words, colour, autoplay = true, interval = 5000 }) {
       setWord(words[optionCount - 1]);
       setIndex(optionCount - 1);
     }
-  }, [index, optionCount,setWord,words]);
+  }, [index, optionCount, setWord, words]);
 
   return (
     <div className="SwitchContainer">
-      <button
-        className={["PreviousArrow", "Arrow"].join(" ")}
-        style={{ color: colour }}
-        onClick={() => setIndex((index) => index - 1)}
-      />
-      <div className="SwitchWord">{word}</div>
-      <button
-        className={["NextArrow", "Arrow"].join(" ")}
-        style={{ color: colour }}
-        onClick={() => setIndex((index) => index + 1)}
-      />
+      {hasArrows && (
+        <button
+          className={["PreviousArrow", "Arrow"].join(" ")}
+          style={{ color: colour }}
+          onClick={() => setIndex((index) => index - 1)}
+        />
+      )}
+      <div className="SwitchWord">
+        {word}
+      </div>
+      {hasArrows && (
+        <button
+          className={["NextArrow", "Arrow"].join(" ")}
+          style={{ color: colour }}
+          onClick={() => setIndex((index) => index + 1)}
+        />
+      )}
     </div>
   );
 }

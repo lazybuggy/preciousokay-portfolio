@@ -2,7 +2,11 @@
     position: relative;
     display: inline-flex;
     justify-content: center;
-    line-height: 60px;
+    /* line-height: 60px; */
+}
+
+.SwitchWord{
+    color: #C4D6B0;
 }
 
 .Arrow{
