@@ -1,3 +1,13 @@
+.Main{
+    padding: 50px 0;
+}
+
+.FinishMain,
+.DoodlesMain,
+.WIPMain{
+    padding: 50px 0 0;
+    box-sizing: border-box;
+}
 
   .HeroContainer{
     height: 125px;
@@ -17,7 +27,6 @@
   }
   
   .Container .Links{
-    /* flex:1; */
     min-height: 350px;
     position: relative;
   }
@@ -32,26 +41,27 @@
 }
   
   .Container .Description{
-    width: 500px;
+    max-width: 600px;
+    margin: 0 20px;
   }
   
-  
   @media screen and (min-width: 768px) {
+    .Main{
+        padding: 0;
+    }
+
     .HeroContainer{
       height: 375px;
     }
 
     .Container .Links{
-        /* flex:1; */
         min-width: 500px;
         min-height: unset;
       }
-    
 
     .Container{
         flex-direction: row;
       }
-
 
   .Links .wip{
     left: 250px;

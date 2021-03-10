@@ -1,5 +1,5 @@
 .Gallery{
-    border: 20px solid orange;
+    border: 10px solid #9EB5A4;
     height: 100vh;
     box-sizing: border-box;
     display: flex;
@@ -45,7 +45,7 @@
 .InfoWrapper{
     position: absolute;
     display: flex;
-    background: red;
+    background: #C4D6B0;
     height: 150px;
     bottom: 20px;
     right:0;
@@ -61,6 +61,8 @@
     width: 10px;
     word-wrap: break-word;
     margin: 20px 10px;
+    align-self: center;
+    color: black;
 }
 
 .Info{
@@ -71,6 +73,7 @@
 
 .Info p{
     margin: 0;
+    color: black;
 }
 
 @media screen and (min-width: 768px) {
@@ -80,7 +83,7 @@
 
     .Pane{
         flex-direction: column;
-        border-right: 20px solid orange;
+        border-right: 10px solid #9EB5A4;
         overflow-y: scroll;
         overflow-x: unset;
         width: fit-content;

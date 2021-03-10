@@ -26,12 +26,12 @@ return (
     </div>
     <div className="InfoWrapper">
         <div className="Tab">
-            INFO
+            <b>INFO</b>
         </div>
         <div className="Info">
-        <p>Time Taken: {pane.tt}</p>
-        <p>Media Used: {pane.mu}</p>
-        <p>Title: {pane.title}</p>
+        <p><b>TITLE:</b> {pane.title}</p>
+        <p><b>TIME:</b> {pane.tt}</p>
+        <p><b>MEDIUM:</b> {pane.mu}</p>
         </div>
     </div>
 </div>

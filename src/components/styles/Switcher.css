@@ -1,0 +1,25 @@
+.SwitchContainer{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    line-height: 60px;
+}
+
+.Arrow{
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    background: transparent;
+    position: absolute;
+    padding: 0;
+}
+
+.PreviousArrow{
+    border-top: none;
+    border-bottom: 15px solid currentColor;
+}
+
+.NextArrow{
+    border-bottom: none;
+    border-top: 15px solid currentColor;
+    bottom:-2px;
+}

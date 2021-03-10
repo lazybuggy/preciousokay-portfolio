@@ -20,6 +20,14 @@ html, #root, body,.Main{
 
 .Nav a{
   margin-right: 20px;
-  color: purple;
+  color: #BD6340;
   font-size: 18px;
+}
+
+a:visited{
+  color: #BD6340;
+}
+
+a:hover{
+  opacity: 0.8;
 }
