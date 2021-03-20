@@ -5,7 +5,7 @@ function Switcher({
   words,
   colour,
   autoplay = true,
-  interval = 5000,
+  interval = 3500,
   hasArrows = false,
 }) {
   const [index, setIndex] = useState(0);
