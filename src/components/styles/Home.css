@@ -1,100 +1,71 @@
-.Main{
-    padding: 50px 0;
-    box-sizing: border-box;
+.root {
+    height: 100vh;
+    background-color: pink;
 }
 
-.FinishMain,
-.DoodlesMain,
-.WIPMain{
-    padding: 50px 0 0;
+.container{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  padding: 25px 100px;
+  box-sizing: border-box;
 }
 
-  .HeroContainer{
-    height: 125px;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .Hero{
-    height: 100%;
-  }
-  
-  .Container{
-    display: flex;
-    margin: 30px 0;
-    min-height: 310px;
-    flex-direction: column;
-  }
-  
-  .Container .Links{
-    min-height: 350px;
-    position: relative;
-  }
+.homeNav{
+  margin-top: 80px;
+}
 
-  .Links .wip{
-      left: 180px;
-      top: 100px;
-  }
+.topNav{
+  text-align: end;
+}
 
-  .Links .doodles{
-    top: 200px;
+.backgroundText{
+  font-size: 200px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  color: pink;
+line-height: 1;
+}
+
+.mainText,
+.halfCircle {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
 }
   
-  .Container .Description{
-    max-width: 600px;
-    margin: 0 20px;
-  }
+.halfCircle {
+  width: 80vh;
+  height: 40vh; /* as the half of the width */
+  background-color: gold;
+  opacity: 0.7;
+  border-bottom-left-radius: calc(40vh + 10px);  /* 100px of height + 10px of border */
+  border-bottom-right-radius: calc(40vh + 10px);/* 100px of height + 10px of border */
+  /* border: 10px solid gray; */
+  /* border-width: 8px;
+  border-style: solid;
+  border-image: linear-gradient(to right bottom, #260B3C, #a053df);
+  border-image-slice: 1;
+  border-top: 0;
+  border-image-repeat: round; */
+  /* position: absolute; */
+}
 
-  .ContactMe{
-      margin: 0 20px 40px;
-  }
-
-  .ContactMe h2{
-    color: #BD6340;
-    letter-spacing: 6px;
-  }
-
-  .ContactMe a{
-      color: white;
-      text-decoration: none;
-  }
-
-  /* a:visited{
-    color: #BD6340;
-  } */
-  
-  .ContactMe a:hover{
-    opacity: 0.8;
-  }
-  
-  @media screen and (min-width: 768px) {
+/* .halfCircle::after {
+  position: absolute;
+  top: -4px; bottom: -4px;
+  left: -4px; right: -4px;
+  background: linear-gradient(red, blue);
+  content: '';
+  z-index: -1;
+  border-radius: 16px;
+} */
+  /* @media screen and (min-width: 768px) {
     .Main{
         padding: 0;
     }
-
-    .HeroContainer{
-      height: 375px;
-    }
-
-    .Container .Links{
-        min-width: 500px;
-        min-height: unset;
-      }
-
-    .Container{
-        flex-direction: row;
-      }
-
-  .Links .wip{
-    left: 250px;
-}
-
-.ContactMe{
-    text-align: center;
-}
-
-.ContactMe h2{
-   font-size: 30px;
-  }
       
-  }
+  } */
