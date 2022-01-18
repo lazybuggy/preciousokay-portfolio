@@ -1,10 +1,4 @@
-import hero from "../assets/home/hero.png";
-import green from "../assets/home/green.png";
-import pink from "../assets/home/pink.png";
-import yellow from "../assets/home/yellow.png";
 import "./styles/Home.css";
-import ImageLink from "./ImageLink";
-import Switcher from "./Switcher";
 import MagicText from "./MagicText";
 
 function Home() {
