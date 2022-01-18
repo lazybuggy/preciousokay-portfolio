@@ -1,25 +1,23 @@
 import "./styles/Home.css";
-import MagicText from "./MagicText";
+import Switcher from "./Switcher";
 
 function Home() {
   return (
     <div className="root">
       <div className="container">
-        <div className="topNav">
-          <h4 className="wip">WORK IN PROGRESS</h4>
-          <h4 className="sketches">QUICK SKETCHES</h4>
-        </div>
         <div className="homeNav">
-          <h4 className="personalProjects">PERSONAL PROJECTS</h4>
-          <h4 className="projects">PROJECTS</h4>
+          <h4 className="work">WORK</h4>
           <h4 className="resume">RESUME</h4>
           <h4 className="contact">CONTACT</h4>
         </div>
-        <MagicText
+        {/* <MagicText
           words={["fashion admirer", "cat lover", "anime lover", "cozy gamer", 'self taught artist', 'perfume enthusiast']}
-        />
+        /> */}
 
-        <div className="backgroundText">0914</div>
+        <div className="backgroundText">
+          <p className="09">09</p>
+          <p className="14">14</p>
+          </div>
         <div className="mainText">
           <h1>PRECIOUS OKEH</h1>
           <h3>MULTIMEDIA DESIGNER BASED IN TORONTO</h3>
@@ -39,22 +37,20 @@ function Home() {
             href="/doodles"
             src={pink}
           /> */}
-        {/* <div className="Description">
-          Hi, I’m Precious! I’m a student at Ryerson studying Aerospace
-          Engineering and also a{" "}
+        <div className="iAm">
+          I am a:
           <Switcher
             words={[
-              "Self-Taught Freelance Artist",
-              "Anime Lover",
-              "Cozy Gamer",
-              "Music Enthusiast",
-              "Cat Lover",
-              "Fashion Admirer",
+              "fashion admirer",
+              "cat lover",
+              "fan of anime",
+              "cozy gamer",
+              "self taught artist",
+              "perfume enthusiast",
             ]}
-            colour="#C4D6B0"
-          />{" "}
-          based in the Greater Toronto Area!
-        </div> */}
+            colour="#FF6847"
+          />
+        </div>
         {/* </div>
       <div className="ContactMe">
           <h2>CONTACT ME</h2> */}

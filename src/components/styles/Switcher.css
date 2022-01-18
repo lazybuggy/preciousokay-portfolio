@@ -1,12 +1,13 @@
 .SwitchContainer{
     position: relative;
-    display: inline-flex;
+    /* display: inline-flex; */
     justify-content: center;
     /* line-height: 60px; */
+    margin-left: 30px;
 }
 
 .SwitchWord{
-    color: #C4D6B0;
+    color: #FF6847;
 }
 
 .Arrow{

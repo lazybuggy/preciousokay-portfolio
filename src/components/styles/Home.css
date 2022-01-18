@@ -1,6 +1,7 @@
 .root {
     height: 100vh;
-    background-color: pink;
+    background-color: #fff;
+    color: #000;
 }
 
 .container{
@@ -12,60 +13,77 @@
 }
 
 .homeNav{
-  margin-top: 80px;
-}
-
-.topNav{
-  text-align: end;
+  /* margin-top: 80px; */
+  display: flex;
+  justify-content: space-between;
 }
 
 .backgroundText{
-  font-size: 200px;
+  /* font-size: 200px; */
   position: absolute;
+  display: flex;
   right: 0;
   bottom: 0;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-  color: pink;
+  color: #fff;
 line-height: 1;
 }
 
-.mainText,
-.halfCircle {
-  position: absolute;
+.backgroundText p{
+  margin: 0;
+  font-size: 30vh;
+}
+
+.iAm{
+  margin-top: 180px;
+}
+
+.mainText{
+    position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%,-50%);
-}
-  
-.halfCircle {
-  width: 80vh;
-  height: 40vh; /* as the half of the width */
-  background-color: gold;
-  opacity: 0.7;
-  border-bottom-left-radius: calc(40vh + 10px);  /* 100px of height + 10px of border */
-  border-bottom-right-radius: calc(40vh + 10px);/* 100px of height + 10px of border */
-  /* border: 10px solid gray; */
-  /* border-width: 8px;
-  border-style: solid;
-  border-image: linear-gradient(to right bottom, #260B3C, #a053df);
-  border-image-slice: 1;
-  border-top: 0;
-  border-image-repeat: round; */
-  /* position: absolute; */
+  z-index: 3;
+  width: 350px;
 }
 
-/* .halfCircle::after {
+.mainText *{
+  text-align: center;
+}
+  
+.halfCircle{
   position: absolute;
-  top: -4px; bottom: -4px;
-  left: -4px; right: -4px;
-  background: linear-gradient(red, blue);
-  content: '';
-  z-index: -1;
-  border-radius: 16px;
-} */
-  /* @media screen and (min-width: 768px) {
-    .Main{
-        padding: 0;
-    }
-      
-  } */
+width: 372px;
+height: 92px;
+left: 63px;
+top: 568px;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.2);
+border: 1px solid #FFFFFF;
+box-sizing: border-box;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+backdrop-filter: blur(10px);
+}
+
+@media screen and (min-width: 768px) {
+  .homeNav{
+    display: initial;
+    margin-top: 80px;
+  }
+
+  .mainText{
+width: unset;
+  }
+
+  .backgroundText p{
+    font-size: 50vh;
+  }
+
+  .halfCircle{
+    position: absolute;
+  width: 576px;
+  height: 576px;
+  left: calc(50% - 576px/2);
+  top: calc(50% - 576px/2);
+  }
+}
