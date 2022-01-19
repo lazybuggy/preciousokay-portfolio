@@ -110,6 +110,10 @@
     width: unset;
   }
 
+  .backgroundText{
+    bottom: 0;
+  }
+  
   .backgroundText p,
   .backgroundText .day {
     font-size: 50vh;

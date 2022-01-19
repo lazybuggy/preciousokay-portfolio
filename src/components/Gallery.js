@@ -14,6 +14,7 @@ function Gallery({ panes }) {
               height="100%"
               autoPlay={true}
               loop={true}
+              playsInline={true}
               className="GalleryImage"
               alt={pane.title}
               onClick={() => setPane(pane)}
@@ -38,6 +39,7 @@ function Gallery({ panes }) {
             src={pane.video}
             autoPlay={true}
             loop={true}
+            playsInline={true}
           />
         ) : (
           <div
