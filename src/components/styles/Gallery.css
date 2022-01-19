@@ -1,5 +1,5 @@
 .Gallery{
-    border: 10px solid #9EB5A4;
+    border: 10px solid #fff;
     height: 100vh;
     box-sizing: border-box;
     display: flex;
@@ -23,10 +23,8 @@
 
 .Enlarged{
     flex: 1;
-    /* background: pink; */
     position: relative;
-    /* max-height: 100%;
-    max-width: 100%; */
+    background-color: #fff;
 }
 
 .Enlarged .GalleryImageBig{
@@ -83,7 +81,7 @@
 
     .Pane{
         flex-direction: column;
-        border-right: 10px solid #9EB5A4;
+        border-right: 10px solid #fff;
         overflow-y: scroll;
         overflow-x: unset;
         width: fit-content;

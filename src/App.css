@@ -2,7 +2,7 @@ html, #root, body,.Main{
   height: 100%;
   width: 100%;
   overflow: hidden;
-  font-family: 'Space Mono', monospace;
+  font-family: 'Press Start 2P', cursive;
   color: white;
 }
 
@@ -24,6 +24,7 @@ html, #root, body,.Main{
   font-size: 18px;
 }
 
+a:link,
 a:visited{
   color: #BD6340;
 }

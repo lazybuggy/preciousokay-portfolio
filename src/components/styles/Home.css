@@ -1,100 +1,131 @@
-.Main{
-    padding: 50px 0;
-    box-sizing: border-box;
+.root {
+  height: 100vh;
+  background-color: #fff;
+  color: #000;
 }
 
-.FinishMain,
-.DoodlesMain,
-.WIPMain{
-    padding: 50px 0 0;
+.container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  padding: 25px 25px 60px;
+  box-sizing: border-box;
 }
 
-  .HeroContainer{
-    height: 125px;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .Hero{
-    height: 100%;
-  }
-  
-  .Container{
-    display: flex;
-    margin: 30px 0;
-    min-height: 310px;
-    flex-direction: column;
-  }
-  
-  .Container .Links{
-    min-height: 350px;
-    position: relative;
-  }
-
-  .Links .wip{
-      left: 180px;
-      top: 100px;
-  }
-
-  .Links .doodles{
-    top: 200px;
-}
-  
-  .Container .Description{
-    max-width: 600px;
-    margin: 0 20px;
-  }
-
-  .ContactMe{
-      margin: 0 20px 40px;
-  }
-
-  .ContactMe h2{
-    color: #BD6340;
-    letter-spacing: 6px;
-  }
-
-  .ContactMe a{
-      color: white;
-      text-decoration: none;
-  }
-
-  /* a:visited{
-    color: #BD6340;
-  } */
-  
-  .ContactMe a:hover{
-    opacity: 0.8;
-  }
-  
-  @media screen and (min-width: 768px) {
-    .Main{
-        padding: 0;
-    }
-
-    .HeroContainer{
-      height: 375px;
-    }
-
-    .Container .Links{
-        min-width: 500px;
-        min-height: unset;
-      }
-
-    .Container{
-        flex-direction: row;
-      }
-
-  .Links .wip{
-    left: 250px;
+.homeNav {
+  display: flex;
+  justify-content: space-between;
+  color: black;
 }
 
-.ContactMe{
-    text-align: center;
+.backgroundText {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  right: 0;
+  bottom: 60px;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  color: #fff;
+  line-height: 1;
 }
 
-.ContactMe h2{
-   font-size: 30px;
+.backgroundText p {
+  margin: 0;
+  font-size: 30vh;
+  grid-area: 1/3;
+  font-family: 'Bebas Neue', cursive;
+  line-height: 0.7;
+}
+
+.backgroundText .day {
+  margin-left: 150px;
+  margin-top: 80px;
+}
+
+.iAm {
+  position: absolute;
+  bottom: 110px;
+  font-size: 12px;
+}
+
+.mainText {
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -45%);
+  z-index: 3;
+  width: 350px;
+}
+
+.mainText h1 {
+  font-size: 34px;
+  font-family: 'Goldman', cursive;
+}
+
+.mainText h3 {
+  font-size: 18px;
+  color: #797979;
+  font-family: 'Oswald', sans-serif;
+}
+
+.mainText * {
+  text-align: center;
+  margin: 0;
+}
+
+.halfCircle {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -40%);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 25px 100px;
   }
-      
+
+  .homeNav {
+    display: initial;
+    margin-top: 80px;
   }
+
+  .mainText {
+    top: 50%;
+    transform: translate(-50%, -50%);
+   width: unset;
+  }
+
+  .mainText h1 {
+    font-size: 48px;
+    width: unset;
+  }
+
+  .backgroundText{
+    bottom: 0;
+  }
+  
+  .backgroundText p,
+  .backgroundText .day {
+    font-size: 50vh;
+    margin: 0;
+    grid-area: auto;
+  }
+
+  .halfCircle {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
