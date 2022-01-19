@@ -6,7 +6,9 @@ function Home() {
     <div className="root">
       <div className="container">
         <div className="homeNav">
-          <h4 className="work">WORK</h4>
+          <h4 className="work" text="Finished">
+            <a  href="/work">WORK</a>
+          </h4>
           <h4 className="resume">RESUME</h4>
           <h4 className="contact">CONTACT</h4>
         </div>
@@ -15,9 +17,9 @@ function Home() {
         /> */}
 
         <div className="backgroundText">
-          <p className="09">09</p>
-          <p className="14">14</p>
-          </div>
+          <p className="month">09</p>
+          <p className="day">14</p>
+        </div>
         <div className="mainText">
           <h1>PRECIOUS OKEH</h1>
           <h3>MULTIMEDIA DESIGNER BASED IN TORONTO</h3>
