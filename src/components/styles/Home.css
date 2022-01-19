@@ -8,7 +8,7 @@
   height: 100%;
   width: 100%;
   position: relative;
-  padding: 25px;
+  padding: 25px 25px 60px;
   box-sizing: border-box;
 }
 
@@ -34,6 +34,8 @@
   margin: 0;
   font-size: 30vh;
   grid-area: 1/3;
+  font-family: 'Bebas Neue', cursive;
+  line-height: 0.7;
 }
 
 .backgroundText .day {
@@ -43,7 +45,8 @@
 
 .iAm {
   position: absolute;
-  bottom: 40px;
+  bottom: 70px;
+  font-size: 12px;
 }
 
 .mainText {
@@ -57,10 +60,13 @@
 
 .mainText h1 {
   font-size: 34px;
+  font-family: 'Goldman', cursive;
 }
 
 .mainText h3 {
-  font-size: 23px;
+  font-size: 18px;
+  color: #797979;
+  font-family: 'Oswald', sans-serif;
 }
 
 .mainText * {
@@ -94,6 +100,11 @@
   }
 
   .mainText {
+   width: unset;
+  }
+
+  .mainText h1 {
+    font-size: 48px;
     width: unset;
   }
 
@@ -108,10 +119,5 @@
     position: absolute;
     width: 500px;
     height: 500px;
-  }
-
-  .iAm {
-    margin-top: 200px;
-    position: initial;
   }
 }

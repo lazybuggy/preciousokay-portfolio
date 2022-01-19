@@ -13,15 +13,12 @@ function Gallery({ panes }) {
               width="100%"
               height="100%"
               autoPlay={true}
+              loop={true}
               className="GalleryImage"
               alt={pane.title}
               onClick={() => setPane(pane)}
-            >
-              <source
-                src={pane.video}
-                type="video/mp4"
-              />
-            </video>
+              src={pane.video}
+            />
           ) : (
             <img
               key={index}
@@ -35,12 +32,13 @@ function Gallery({ panes }) {
       </div>
       <div className="Enlarged">
         {pane.video != null ? (
-          <video width="100%" height="100%" autoPlay>
-            <source
-              src={pane.video}
-              type="video/mp4"
-            />
-          </video>
+          <video
+            width="100%"
+            height="100%"
+            src={pane.video}
+            autoPlay={true}
+            loop={true}
+          />
         ) : (
           <div
             className="GalleryImageBig"
@@ -48,7 +46,7 @@ function Gallery({ panes }) {
           />
         )}
       </div>
-      <div className="InfoWrapper">
+      {/* <div className="InfoWrapper">
         <div className="Tab">
           <b>INFO</b>
         </div>
@@ -63,7 +61,7 @@ function Gallery({ panes }) {
             <b>MEDIUM:</b> {pane.mu}
           </p>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
