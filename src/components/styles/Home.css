@@ -23,7 +23,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   right: 0;
-  bottom: 0;
+  bottom: 60px;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
     1px 1px 0 #000;
   color: #fff;
@@ -45,15 +45,15 @@
 
 .iAm {
   position: absolute;
-  bottom: 70px;
+  bottom: 110px;
   font-size: 12px;
 }
 
 .mainText {
   position: absolute;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  top: 45%;
+  transform: translate(-50%, -45%);
   z-index: 3;
   width: 350px;
 }
@@ -79,8 +79,8 @@
   width: 300px;
   height: 300px;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  top: 40%;
+  transform: translate(-50%, -40%);
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.2);
   border: 1px solid #ffffff;
@@ -100,6 +100,8 @@
   }
 
   .mainText {
+    top: 50%;
+    transform: translate(-50%, -50%);
    width: unset;
   }
 
@@ -119,5 +121,7 @@
     position: absolute;
     width: 500px;
     height: 500px;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 }

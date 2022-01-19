@@ -25,20 +25,6 @@ function Home() {
           <h3>MULTIMEDIA DESIGNER BASED IN TORONTO</h3>
         </div>
         <div className="halfCircle" />
-
-        {/* <ImageLink
-            className="finished"
-            text="Finished"
-            href="/finished"
-            src={green}
-          />
-          <ImageLink className="wip" text="WIP" href="/wip" src={yellow} />
-          <ImageLink
-            className="doodles"
-            text="Doodles"
-            href="/doodles"
-            src={pink}
-          /> */}
         <div className="iAm">
           I am a:
           <Switcher
@@ -53,10 +39,6 @@ function Home() {
             colour="#FF6847"
           />
         </div>
-        {/* </div>
-      <div className="ContactMe">
-          <h2>CONTACT ME</h2> */}
-        {/* <a href="mailto:preciousezinnaokeh@gmail.com">preciousezinnaokeh at gmail dot com</a> */}
       </div>
     </div>
   );

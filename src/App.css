@@ -24,6 +24,7 @@ html, #root, body,.Main{
   font-size: 18px;
 }
 
+a:link,
 a:visited{
   color: #BD6340;
 }
