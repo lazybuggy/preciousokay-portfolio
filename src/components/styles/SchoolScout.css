@@ -1,0 +1,147 @@
+.SSroot {
+  height: 100%;
+  overflow-y: scroll;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  color: black;
+}
+
+.SSImage {
+  width: 100%;
+}
+
+.SScontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  padding: 25px 25px 60px;
+  box-sizing: border-box;
+}
+
+.hero {
+  width: fit-content;
+  margin: 50px auto;
+}
+
+.about {
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about .wrapper1 {
+  align-self: center;
+}
+
+.about h2 {
+  color: #f58345;
+  font-size: 36px;
+  margin: 0;
+}
+
+.about h3 {
+  color: #768e9c;
+  margin-left: 70px;
+  font-size: 30px;
+  margin-top: 5px;
+}
+
+.about p {
+  max-width: 600px;
+}
+
+p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+h4 {
+  margin: 10px 0;
+}
+
+#featuresTitle,
+.persona h2 {
+  font-size: 40px;
+  margin: 40px 0 0;
+}
+
+.features {
+  display: flex;
+  column-gap: 40px;
+  width: 100%;
+  flex-direction: column;
+}
+
+.features h4 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.features .wrapper1,
+.features .wrapper2 {
+  min-width: 200px;
+  flex-grow: 1;
+}
+
+.persona {
+  text-align: center;
+}
+
+.persona h2 {
+  text-align: right;
+}
+
+.aesthetics {
+  padding-bottom: 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+}
+
+.aesthetics h4 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.aestheticsImage {
+  margin-top: 100px;
+  width: 400px;
+}
+
+.aesthetics .wrapper1 {
+  min-width: 350px;
+  max-width: 530px;
+}
+
+@media screen and (min-width: 1024px) {
+  .about,
+  .features,
+  .aesthetics {
+    flex-direction: row;
+  }
+
+  .about .wrapper1 {
+    min-width: 500px;
+  }
+
+  p {
+    font-size: 24px;
+    margin: 15px 0;
+  }
+
+  h4 {
+    margin: 15px 0;
+  }
+
+  #featuresTitle,
+  .persona h2 {
+    font-size: 56px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+  }
+}

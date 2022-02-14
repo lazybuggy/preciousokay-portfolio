@@ -16,6 +16,7 @@ import gleaming from "../assets/work/gleaming.mp4";
 import loading from "../assets/work/loading.mp4";
 import haro from "../assets/work/HARO.mp4";
 import card from "../assets/work/CARD.mp4";
+import skincare from "../assets/work/skincare.png";
 
 import "../App.css";
 import "./styles/Home.css";
@@ -27,10 +28,12 @@ return (<>
       <div className="Nav">
         <Link to="/">Home</Link>
         <Link to="/work">Work</Link>
+        <Link to="/recentwork">UX/UI</Link>
       </div>
 <div className="FinishMain Main">
     <Gallery
     panes={[
+        {image:skincare, title:"Among Us MECHA", tt:"3 hours", mu: "Pencil and Paper + FireAlpaca + InkScape"},
         {video:gleaming, title:"Among Us MECHA", tt:"3 hours", mu: "Pencil and Paper + FireAlpaca + InkScape"},
         {image:ee, title:"Among Us MECHA", tt:"3 hours", mu: "Pencil and Paper + FireAlpaca + InkScape"},
         {image:uno, title:"Among Us MECHA", tt:"3 hours", mu: "Pencil and Paper + FireAlpaca + InkScape"},

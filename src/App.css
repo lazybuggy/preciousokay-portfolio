@@ -20,13 +20,16 @@ html, #root, body,.Main{
 
 .Nav a{
   margin-right: 20px;
-  color: #BD6340;
+  /* color: #BD6340; */
   font-size: 18px;
+  text-decoration: none;
 }
 
 a:link,
 a:visited{
-  color: #BD6340;
+  /* color: #BD6340; */
+  color: black;
+  text-decoration: none;
 }
 
 a:hover{

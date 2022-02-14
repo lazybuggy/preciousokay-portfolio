@@ -6,8 +6,8 @@ function Home() {
     <div className="root">
       <div className="container">
         <div className="homeNav">
-          <h4 className="work" text="Finished">
-            <a  href="/work">WORK</a>
+          <h4 className="work" text="Work">
+            <a href="/work">WORK</a>
           </h4>
           {/* <h4 className="resume">RESUME</h4>
           <h4 className="contact">CONTACT</h4> */}
@@ -15,7 +15,10 @@ function Home() {
         {/* <MagicText
           words={["fashion admirer", "cat lover", "anime lover", "cozy gamer", 'self taught artist', 'perfume enthusiast']}
         /> */}
-
+        <h4 className="recentWork">Check out my recent UX/UI work!</h4>
+        <h4 className="work" text="AppDesign">
+            <a href="/recentwork">APP DESIGN</a>
+          </h4>
         <div className="backgroundText">
           <p className="month">09</p>
           <p className="day">14</p>
