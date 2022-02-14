@@ -61,7 +61,7 @@ function SchoolScout() {
               <img src={features} className="SSImage" alt="summary" />
             </div>
             <div className="wrapper2">
-              <h4>Gnatt Chart</h4>
+              <h4>Gantt Chart</h4>
               <p>
                 Day At A Glance gives users the ability to visualize how their
                 day will go.
