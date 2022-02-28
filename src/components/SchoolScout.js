@@ -27,7 +27,7 @@ function SchoolScout() {
           <div className="about">
             <div className="wrapper1">
               <h2>School Scout</h2>
-              <h3>Fictoncal App</h3>
+              <h3>Fictional App</h3>
               <p>
                 A project that I pursued is the accumulation of a school agenda,
                 along with material specific to individual courses, all within
