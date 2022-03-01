@@ -22,7 +22,7 @@ import agn from "../assets/work/agn.mp4";
 import graphic1 from "../assets/work/graphics-01.png";
 import graphic2 from "../assets/work/graphics-02.png";
 import graphic3 from "../assets/work/graphics-03.png";
-import graphic4 from "../assets/work/graphics-04.png";
+// import graphic4 from "../assets/work/graphics-04.png";
 
 
 import "../App.css";
