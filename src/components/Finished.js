@@ -17,6 +17,7 @@ import loading from "../assets/work/loading.mp4";
 import haro from "../assets/work/HARO.mp4";
 import card from "../assets/work/CARD.mp4";
 import skincare from "../assets/work/skincare.png";
+import agn from "../assets/work/agn.mp4";
 
 import graphic1 from "../assets/work/graphics-01.png";
 import graphic2 from "../assets/work/graphics-02.png";
@@ -42,7 +43,7 @@ return (<>
         {image:graphic1, title:"Among Us MECHA", tt:"3 hours", mu: "Pencil and Paper + FireAlpaca + InkScape"},
         {image:graphic2, title:"Among Us MECHA", tt:"3 hours", mu: "Pencil and Paper + FireAlpaca + InkScape"},
         {image:graphic3, title:"Among Us MECHA", tt:"3 hours", mu: "Pencil and Paper + FireAlpaca + InkScape"},
-        {image:graphic4, title:"Among Us MECHA", tt:"3 hours", mu: "Pencil and Paper + FireAlpaca + InkScape"},
+        {video:agn, title:"Among Us MECHA", tt:"3 hours", mu: "Pencil and Paper + FireAlpaca + InkScape"},
         {image:skincare, title:"Among Us MECHA", tt:"3 hours", mu: "Pencil and Paper + FireAlpaca + InkScape"},
         {video:gleaming, title:"Among Us MECHA", tt:"3 hours", mu: "Pencil and Paper + FireAlpaca + InkScape"},
         {image:ee, title:"Among Us MECHA", tt:"3 hours", mu: "Pencil and Paper + FireAlpaca + InkScape"},
